@@ -1,0 +1,78 @@
+// font-family: 'Raleway', sans-serif;
+
+
+$green: #ace200;
+$dark: #393939;
+
+
+* {
+	font-family: 'Cabin', sans-serif;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+.grid{
+  display: table;
+  width: 100%;
+  border-spacing:.5em;
+  margin-bottom: 50px;
+  .col{
+    padding:1em;
+    width:25%;
+    display:table-cell;
+  }
+ }
+
+header {
+	#logo {
+		width: 80px;
+		padding-left: 10%;
+	}
+	nav {
+		padding: 1.5em 3%;
+		float: right;
+		a {
+			color: black;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 18px;
+			text-decoration: none;
+			margin: 2rem;
+			text-transform: uppercase;
+
+		}
+	}
+}
+
+footer {
+	background-color: $dark;
+	height: 10vh;
+	position: relative;
+	p, a {
+		color: white;
+	}
+	// p {
+	// 	position: absolute;
+	// 	top: 50%;
+	// }
+	// p#copyright {
+	// 	left: 50%;
+	// }
+	a:hover {
+		text-decoration: none;
+		color: $green;
+	}
+	#social a {
+		color: white;
+		text-transform: none;
+		font-size: 20px;
+		margin: 10px;
+	}
+}
+
+
+
+
