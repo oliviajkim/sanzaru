@@ -10,6 +10,19 @@ $dark: #393939;
 	box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+h1 {
+	font-weight: 700;
+}
+
 h2 {
 	font-weight: 700;
 }
@@ -47,10 +60,12 @@ header {
 	}
 }
 
+
 footer {
 	background-color: $dark;
 	height: 10vh;
-	position: relative;
+	position: fixed !important;
+	bottom: 0;
 	p, a {
 		color: white;
 	}
@@ -74,5 +89,67 @@ footer {
 }
 
 
+// FORM 
+
+form {
+	  margin-top: 70px;
+}
+
+.form-control {
+  border-radius: 0px !important;
+}
+
+input, textarea {
+  color:black;
+  font-size: 16px;
+  border: 1px solid $green !important;
+  box-shadow: none !important;
+} 
+
+input::-webkit-input-placeholder {
+  color: black !important;
+}
+
+input-moz-placeholder {
+  color: black !important;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  color: black !important;
+}
+input:-ms-input-placeholder { 
+  color: black !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: black !important;
+}
+
+textarea::-moz-placeholder {
+  color: black !important;
+}
+textarea:-moz-placeholder {   /* Older versions of Firefox */
+  color: black !important;
+}
+textarea:-ms-textarea-placeholder { 
+  color: black !important;
+}
+
+input[placeholder], textarea[placeholder] {
+   font-weight: bold; 
+   color:black !important;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+button, .btn {
+  color: $green;
+  background-color: black;
+  border: none !important;
+  border-radius: 0px !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
 
