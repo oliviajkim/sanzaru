@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
+  get 'users/create'
+
+  get 'users/show'
+
   get 'static_pages/home'
 
   get 'static_pages/about'
