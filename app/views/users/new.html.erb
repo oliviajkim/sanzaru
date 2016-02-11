@@ -1,2 +1,17 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+
+<div class="col-sm-6 col-sm-offset-3" id="new-user">
+	<h1 class="text-center">Sign Up</h1>
+	<%= form_for @user, url: '/users' do |f| %>
+	<form>
+	<fieldset class="form-group">
+		<%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
+	</fieldset>
+	<fieldset class="form-group">
+		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+	</fieldset>
+		<%= f.submit "Sign Up", class: "btn pull-right", id: "sign-up-btn" %>
+	</form>
+	<% end %>
+</div>
+
