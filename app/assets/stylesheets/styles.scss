@@ -81,8 +81,10 @@ header {
 	position: relative;
 	.tron-info, .vrsports-info {
 		position:absolute;
-		top: 0;
-		left: 0;
+		top: 50%;
+		transform: translate(0,-50%);
+		left: 50%;
+		transform: translate(-50%, 0);
 	}
 }
 
@@ -95,7 +97,6 @@ header {
   font-weight: 600 !important;
   font-size: 20px !important;
   letter-spacing: 2px;
-  left:50% !important;
   padding:10px 20px !important;
   border-radius: 22px !important;
   border: 3px solid white !important;
@@ -103,24 +104,22 @@ header {
   font-weight: 700 !important;
   font-size: 16px !important;
   background-color: transparent !important;
-  margin: 0 auto;
 }
 
 .btn:hover {
   border-radius: 22px;
-  border: 3px solid black !important;
-  color:white;
+  border: 3px solid $green !important;
+  color:$green !important;
   font-weight: 700;
   font-size: 20px;
   padding:5px 10px;
   background-color: black !important;
-  color:white !important;
+  // color:white !important;
 }
 
 .btn:focus,.btn:active {
    outline: none !important;
 }
-
 
 
 
@@ -133,7 +132,7 @@ footer {
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
 	// height: 10vh;
-	// position: fixed !important;
+	position: absolute !important;
 	bottom: 0;
 	p, a {
 		color: white;

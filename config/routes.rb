@@ -16,13 +16,13 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
 
-  get 'static_pages/home'
+  get '/', to: "static_pages#home"
 
-  get 'static_pages/about'
+  get '/about', to: 'static_pages#about'
 
-  get 'static_pages/privacy'
+  get '/privacy', to: 'static_pages#privacy'
 
-  get 'static_pages/legal'
+  get '/legal', to: 'static_pages#legal'
 
  
 end
