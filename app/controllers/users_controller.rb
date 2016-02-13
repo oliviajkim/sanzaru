@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def new
   	@user = User.new
-  	render :new
   end
 
   def create
@@ -16,6 +15,21 @@ class UsersController < ApplicationController
   end
 
   def show
+  	@user = User.find(current_user.id)
+  end
+
+  def edit
+  	@user = User.find(current_user.id)
+  	
+  end
+
+  def update
+  	@user = User.find(params[:id])
+  	@user.update_attributes(user_params)
+  	redirect_to user_path(@user)
+  end
+
+  def destroy
   end
 
   private

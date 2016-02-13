@@ -31,7 +31,6 @@ h2 {
   display: table;
   width: 100%;
   border-spacing:.5em;
-  margin-bottom: 50px;
   .col{
     padding:1em;
     width:25%;
@@ -39,21 +38,25 @@ h2 {
   }
  }
 
+ // HEADER 
+
 header {
 	#logo {
 		width: 80px;
 		padding-left: 10%;
 	}
 	nav {
-		padding: 1.5em 3%;
+		font-family: 'Raleway', sans-serif;
+		padding: 1em 3% 1.5em 3%;
 		float: right;
 		a {
 			color: black;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 600;
-			font-size: 18px;
+			font-size: 16px;
 			text-decoration: none;
 			margin: 2rem;
+			padding-bottom: 2em;
 			text-transform: uppercase;
 
 		}
@@ -61,10 +64,76 @@ header {
 }
 
 
+// MAIN
+#main-vrsport, #main-tron {
+	width: 100%;
+}
+
+#main-title1, #main-title2 {
+	margin: 2em;
+}
+
+.space {
+	height: 10vh;
+}
+
+.tron, .vrsports {
+	position: relative;
+	.tron-info, .vrsports-info {
+		position:absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+
+// BUTTONS
+
+.btn {
+
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  letter-spacing: 2px;
+  left:50% !important;
+  padding:10px 20px !important;
+  border-radius: 22px !important;
+  border: 3px solid white !important;
+  // color:black !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  background-color: transparent !important;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  border-radius: 22px;
+  border: 3px solid black !important;
+  color:white;
+  font-weight: 700;
+  font-size: 20px;
+  padding:5px 10px;
+  background-color: black !important;
+  color:white !important;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+
+
+
+
+
+
+// FOOTER 
+
 footer {
 	background-color: $dark;
-	height: 10vh;
-	position: fixed !important;
+	font-family: 'Raleway', sans-serif;
+	// height: 10vh;
+	// position: fixed !important;
 	bottom: 0;
 	p, a {
 		color: white;

@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
 
-  get 'users/new'
+  get 'sessions/new'
 
-  get 'users/create'
+  get 'sessions/create'
 
-  get 'users/show'
+  get 'sessions/destroy'
+
+  # get 'users/new'
+
+  # get 'users/create'
+
+  # get 'users/show'
+
+  # get 'users/edit'
+
+  resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
 
   get 'static_pages/home'
 
