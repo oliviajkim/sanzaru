@@ -3,9 +3,11 @@
 	<%= form_for @user do |f| %>
 	<form>
 	<fieldset class="form-group">
+		<label for="">Reset Email</label>
 		<%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
 	</fieldset>
 	<fieldset class="form-group">
+		<label for="">Reset Password</label>
 		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
 	</fieldset>
 		<%= f.submit "Save", class: "btn pull-right", id: "sign-up-btn" %>
