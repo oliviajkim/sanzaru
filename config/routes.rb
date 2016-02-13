@@ -16,9 +16,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
 
-  get 'static_pages/home'
+  get '/' => "static_pages#home"
 
-  get 'static_pages/about'
+  get '/about' => 'static_pages#about'
 
   get 'static_pages/privacy'
 
