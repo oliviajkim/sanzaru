@@ -19,12 +19,17 @@ body {
 	height: 100%;
 }
 
+// section {
+// 	height: 80vh;
+// }
+
 h1 {
 	font-weight: 700;
 }
 
 h2 {
 	font-weight: 700;
+	margin-top: 60px;
 }
 
 .grid{
@@ -41,6 +46,7 @@ h2 {
  // HEADER 
 
 header {
+	height: 10vh;
 	#logo {
 		width: 80px;
 		padding-left: 10%;
@@ -56,9 +62,13 @@ header {
 			font-size: 16px;
 			text-decoration: none;
 			margin: 2rem;
-			padding-bottom: 2em;
+			padding: .5em;
 			text-transform: uppercase;
-
+		}
+		a:hover {
+			color: $green;
+			background-color: black;
+			text-decoration: none;
 		}
 	}
 }
@@ -67,6 +77,10 @@ header {
 // MAIN
 #main-vrsport, #main-tron {
 	width: 100%;
+	margin-bottom: 50px;
+}
+
+#main-tron {
 }
 
 #main-title1, #main-title2 {
@@ -122,13 +136,10 @@ header {
 }
 
 
-
-
-
-
 // FOOTER 
 
 footer {
+	// height: 10vh;
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
 	// height: 10vh;
@@ -137,13 +148,6 @@ footer {
 	p, a {
 		color: white;
 	}
-	// p {
-	// 	position: absolute;
-	// 	top: 50%;
-	// }
-	// p#copyright {
-	// 	left: 50%;
-	// }
 	a:hover {
 		text-decoration: none;
 		color: $green;

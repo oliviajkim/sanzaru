@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def legal
   end
+
+  def games
+  end
 end
