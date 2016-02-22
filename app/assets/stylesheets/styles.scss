@@ -32,6 +32,10 @@ h2 {
 	margin-top: 60px;
 }
 
+p {
+	font-size: 16px;
+}
+
 .grid{
   display: table;
   width: 100%;
@@ -143,7 +147,7 @@ footer {
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
 	// height: 10vh;
-	position: absolute !important;
+	// position: fixed !important;
 	bottom: 0;
 	p, a {
 		color: white;
