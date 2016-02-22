@@ -16,9 +16,13 @@ Rails.application.routes.draw do
 
   get '/legal', to: 'static_pages#legal'
 
+  get '/games', to: 'static_pages#games'
+
 
 
   get '/jobs', to: 'careers#index'
+
+
 
 
 end
