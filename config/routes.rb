@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   get '/games', to: 'static_pages#games'
 
-
+  get '/games/tron', to: 'static_pages#tron'
 
   get '/jobs', to: 'careers#index'
 
