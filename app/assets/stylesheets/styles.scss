@@ -4,6 +4,9 @@
 $green: #ace200;
 $dark: #393939;
 
+section {
+	height: 80vh;
+}
 
 * {
 	font-family: 'Cabin', sans-serif;
@@ -32,7 +35,7 @@ h2 {
 	margin-top: 60px;
 }
 
-h4 {
+h3, h4 {
 	font-weight: 700;
 }
 
@@ -46,7 +49,7 @@ p {
   border-spacing:.5em;
   .col{
     padding:1em;
-    width:25%;
+    width:33%;
     display:table-cell;
   }
  }
@@ -113,7 +116,7 @@ header {
 
 // BUTTONS
 
-.btn {
+#learn-more {
 
   color: white !important;
   font-weight: 600 !important;
@@ -128,7 +131,7 @@ header {
   background-color: transparent !important;
 }
 
-.btn:hover {
+#learn-more:hover {
   border-radius: 22px;
   border: 3px solid $green !important;
   color:$green !important;
@@ -165,6 +168,9 @@ footer {
 		text-transform: none;
 		font-size: 20px;
 		margin: 10px;
+	}
+	#copyright {
+		font-size: 12px;
 	}
 }
 

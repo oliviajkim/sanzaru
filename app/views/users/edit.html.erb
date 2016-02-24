@@ -1,17 +1,22 @@
-<div class="col-sm-6 col-sm-offset-3" id="new-user">
-	<h1 class="text-center">Edit Settings</h1>
-	<%= form_for @user do |f| %>
-	<form>
-	<fieldset class="form-group">
-		<label for="">Reset Email</label>
-		<%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
-	</fieldset>
-	<fieldset class="form-group">
-		<label for="">Reset Password</label>
-		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
-	</fieldset>
-		<%= f.submit "Save", class: "btn pull-right", id: "sign-up-btn" %>
-	</form>
-	<% end %>
-</div>
+<section>
+	<div class="col-sm-6 col-sm-offset-3 col-xs-12" id="new-user">
+		<h2 class="text-center">Edit Settings</h2>
+		<hr>
+		<!-- <a href="/games"><small>Back to Profile</small></a> -->
+		<small><%= link_to "Back to Profile", user_path(@user), id: "back-to-profile-btn" %></small>
+		<%= form_for @user do |f| %>
+		<form>
+		<fieldset class="form-group">
+			<label for="">Reset Email</label>
+			<%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
+		</fieldset>
+		<fieldset class="form-group">
+			<label for="">Reset Password</label>
+			<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+		</fieldset>
+			<%= f.submit "Save", class: "btn pull-right", id: "edit-btn" %>
+		</form>
+		<% end %>
+	</div>	
+</section>
 
