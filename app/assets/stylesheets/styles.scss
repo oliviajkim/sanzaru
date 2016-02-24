@@ -57,7 +57,7 @@ p {
  // HEADER 
 
 header {
-	height: 10vh;
+	height: 11vh;
 	#logo {
 		width: 80px;
 		padding-left: 10%;
@@ -86,9 +86,9 @@ header {
 
 
 // MAIN
-#main-vrsport, .main-tron {
+#main-vrsport, .main-tron, #main-sonic-fire {
 	width: 100%;
-	margin-bottom: 50px;
+	// margin-bottom: 50px;
 }
 
 #main-tron {
@@ -102,9 +102,9 @@ header {
 	height: 10vh;
 }
 
-.tron, .vrsports {
+.tron, .vrsports, .sonicfire {
 	position: relative;
-	.tron-info, .vrsports-info {
+	.tron-info, .vrsports-info, .sonicfire-info {
 		position:absolute;
 		top: 50%;
 		transform: translate(0,-50%);
@@ -125,7 +125,6 @@ header {
   padding:10px 20px !important;
   border-radius: 22px !important;
   border: 3px solid white !important;
-  // color:black !important;
   font-weight: 700 !important;
   font-size: 16px !important;
   background-color: transparent !important;
@@ -163,11 +162,15 @@ footer {
 		text-decoration: none;
 		color: $green;
 	}
+	#social {
+		// padding-top: 10px;
+	}
 	#social a {
 		color: white;
 		text-transform: none;
 		font-size: 20px;
 		margin: 10px;
+
 	}
 	#copyright {
 		font-size: 12px;
