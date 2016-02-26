@@ -19,10 +19,6 @@ body {
 	height: 100%;
 }
 
-// section {
-// 	height: 80vh;
-// }
-
 h1 {
 	font-weight: 700;
 }
@@ -32,7 +28,7 @@ h2 {
 	margin-top: 60px;
 }
 
-h4 {
+h3, h4 {
 	font-weight: 700;
 }
 
@@ -46,15 +42,56 @@ p {
   border-spacing:.5em;
   .col{
     padding:1em;
-    width:25%;
+    width:33%;
     display:table-cell;
   }
  }
 
  // HEADER 
 
+// .wrapper {
+// 	position: relative;
+// 	header {
+// 		position: absolute;
+// 		top: 0;
+// 	}
+// }
+
 header {
-	height: 10vh;
+		position: absolute;
+		top: 0;
+	}
+
+#main_nav_white {
+	width: 100%;
+	#logo {
+		width: 80px;
+		padding-left: 10%;
+	}
+	nav {
+		font-family: 'Raleway', sans-serif;
+		padding: 1em 3% 1.5em 3%;
+		float: right;
+		a {
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			text-decoration: none;
+			margin: 2rem;
+			padding: .5em;
+			text-transform: uppercase;
+		}
+		a:hover {
+			color: $green;
+			background-color: black;
+			text-decoration: none;
+		}
+	}
+}
+
+#main_nav_black {
+	width: 100%;
 	#logo {
 		width: 80px;
 		padding-left: 10%;
@@ -83,12 +120,8 @@ header {
 
 
 // MAIN
-#main-vrsport, .main-tron {
+#main-vrsport, .main-tron, #main-sonic-fire {
 	width: 100%;
-	margin-bottom: 50px;
-}
-
-#main-tron {
 }
 
 #main-title1, #main-title2 {
@@ -99,9 +132,10 @@ header {
 	height: 10vh;
 }
 
-.tron, .vrsports {
+
+.tron, .vrsports, .sonicfire {
 	position: relative;
-	.tron-info, .vrsports-info {
+	.tron-info, .vrsports-info, .sonicfire-info {
 		position:absolute;
 		top: 50%;
 		transform: translate(0,-50%);
@@ -109,11 +143,26 @@ header {
 		transform: translate(-50%, 0);
 	}
 }
+.tron, #about, #games {
+	// margin-top: -100px;
+	z-index: -200;
+}
 
+#games {
+	position: relative;
+}
+
+#about {
+	margin-top: 10vh;
+}
+
+.description {
+	margin-top: 50px;
+}
 
 // BUTTONS
 
-.btn {
+#learn-more {
 
   color: white !important;
   font-weight: 600 !important;
@@ -122,13 +171,12 @@ header {
   padding:10px 20px !important;
   border-radius: 22px !important;
   border: 3px solid white !important;
-  // color:black !important;
   font-weight: 700 !important;
   font-size: 16px !important;
   background-color: transparent !important;
 }
 
-.btn:hover {
+#learn-more:hover {
   border-radius: 22px;
   border: 3px solid $green !important;
   color:$green !important;
@@ -136,7 +184,6 @@ header {
   font-size: 20px;
   padding:5px 10px;
   background-color: black !important;
-  // color:white !important;
 }
 
 .btn:focus,.btn:active {
@@ -160,11 +207,18 @@ footer {
 		text-decoration: none;
 		color: $green;
 	}
+	#social {
+		// padding-top: 10px;
+	}
 	#social a {
 		color: white;
 		text-transform: none;
 		font-size: 20px;
 		margin: 10px;
+
+	}
+	#copyright {
+		font-size: 12px;
 	}
 }
 

@@ -25,40 +25,40 @@ input, textarea {
 } 
 
 input::-webkit-input-placeholder {
-  color: black !important;
+  color: $dark !important;
 }
 
 input-moz-placeholder {
-  color: black !important;
+  color: $dark !important;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
-  color: black !important;
+  color: $dark !important;
 }
 input:-ms-input-placeholder { 
-  color: black !important;
+  color: $dark !important;
 }
 
 textarea::-webkit-input-placeholder {
-  color: black !important;
+  color: $dark !important;
 }
 
 textarea::-moz-placeholder {
-  color: black !important;
+  color: $dark !important;
 }
 textarea:-moz-placeholder {   /* Older versions of Firefox */
-  color: black !important;
+  color: $dark !important;
 }
 textarea:-ms-textarea-placeholder { 
-  color: black !important;
+  color: $dark !important;
 }
 
 input[placeholder], textarea[placeholder] {
    font-weight: bold; 
-   color:black !important;
+   color:$dark !important;
    font-family: 'Josefin Sans', sans-serif;
 }
 
-button, .btn {
+#edit-btn {
   color: $green;
   background-color: black;
   border: none !important;
