@@ -36,6 +36,11 @@ p {
 	font-size: 16px;
 }
 
+hr.green {
+	width: 80px;
+	border: 2px solid $green;
+}
+
 .grid{
   display: table;
   width: 100%;
@@ -190,6 +195,26 @@ header {
    outline: none !important;
 }
 
+#open-positions-btn {
+	color: $green;
+	border: 3px solid $green;
+	background-color: black;
+	padding: 5px 10px;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 22px;
+	margin: 20px 0px 100px 0;
+}
+
+
+// JOBS
+#slogan {
+	margin:50px;
+}
+
+.benefits-top {
+	margin-top: 40px;
+}
 
 // FOOTER 
 
