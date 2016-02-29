@@ -1,2 +1,17 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+
+
+<div class="col-sm-6 col-sm-offset-3" id="new-user">
+	<h1 class="text-center">Login</h1>
+	<%= form_for :user, url: login_path do |f| %>
+	<form>
+	<fieldset class="form-group">
+		<%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
+	</fieldset>
+	<fieldset class="form-group">
+		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+	</fieldset>
+		<%= f.submit "Login", class: "btn pull-right", id: "login-btn" %>
+	</form>
+	<% end %>
+</div>
+

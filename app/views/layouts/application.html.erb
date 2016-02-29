@@ -40,6 +40,13 @@
 		
 </header>
 
+<div class="user-only">
+	<% if current_user.present? %>
+		<li><%= link_to "Profile", user_path(current_user) %></li>
+		<li><%= link_to "Logout", logout_path, method: :delete %></li>
+	<% end %>
+</div>
+
 <%= yield %>
 
 

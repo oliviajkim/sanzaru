@@ -1,17 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
-  resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
-
-  get '/', to: "static_pages#home"
+ root to: "static_pages#home"
 
   get '/about', to: 'static_pages#about'
-
 
   # GAMES PAGES
   get '/games', to: 'static_pages#games'
@@ -27,6 +18,16 @@ Rails.application.routes.draw do
   get '/games/malgrave-incident', to: 'static_pages#malgrave-incident'
   get '/games/secret-agent-clank', to: 'static_pages#secret-agent-clank'
   get '/games/ninja-reflex', to: 'static_pages#ninja-reflex'
+
+
+  resources :users
+
+  # resources :sessions, only: [:new, :create]
+
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete "logout", to: "sessions#destroy"
+
 
   resources :jobs, only: [:index]
 
