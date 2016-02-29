@@ -15,6 +15,10 @@ html {
     min-height: 100%;
 }
 
+.dark-bg {
+	background-color: $dark
+}
+
 body {
 	height: 100%;
 }
@@ -34,6 +38,11 @@ h3, h4 {
 
 p {
 	font-size: 16px;
+}
+
+hr.green {
+	width: 80px;
+	border: 2px solid $green;
 }
 
 .grid{
@@ -58,11 +67,12 @@ p {
 // }
 
 header {
-		position: absolute;
-		top: 0;
-	}
+	background-image: url(Top-Banner.jpg);
+	background-repeat: no-repeat;
+	height: 100px;
+}
 
-#main_nav_white {
+#main_navigation {
 	width: 100%;
 	#logo {
 		width: 80px;
@@ -70,15 +80,17 @@ header {
 	}
 	nav {
 		font-family: 'Raleway', sans-serif;
-		padding: 1em 3% 1.5em 3%;
+		padding: 1em 3% 1em 3%;
 		float: right;
+		vertical-align: middle;
+		// margin: 40px 0 40px 0;
 		a {
 			color: white;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 600;
 			font-size: 16px;
 			text-decoration: none;
-			margin: 2rem;
+			margin: 1rem;
 			padding: .5em;
 			text-transform: uppercase;
 		}
@@ -90,33 +102,6 @@ header {
 	}
 }
 
-#main_nav_black {
-	width: 100%;
-	#logo {
-		width: 80px;
-		padding-left: 10%;
-	}
-	nav {
-		font-family: 'Raleway', sans-serif;
-		padding: 1em 3% 1.5em 3%;
-		float: right;
-		a {
-			color: black;
-			font-family: 'Raleway', sans-serif;
-			font-weight: 600;
-			font-size: 16px;
-			text-decoration: none;
-			margin: 2rem;
-			padding: .5em;
-			text-transform: uppercase;
-		}
-		a:hover {
-			color: $green;
-			background-color: black;
-			text-decoration: none;
-		}
-	}
-}
 
 
 // MAIN
@@ -143,17 +128,14 @@ header {
 		transform: translate(-50%, 0);
 	}
 }
-.tron, #about, #games {
+
+ #about, #games {
 	// margin-top: -100px;
 	z-index: -200;
 }
 
 #games {
 	position: relative;
-}
-
-#about {
-	margin-top: 10vh;
 }
 
 .description {
@@ -188,6 +170,49 @@ header {
 
 .btn:focus,.btn:active {
    outline: none !important;
+}
+
+#open-positions-btn {
+	color: $green;
+	border: 3px solid $green;
+	background-color: black;
+	padding: 5px 10px;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 22px;
+	margin: 20px 0px 100px 0;
+}
+
+
+// JOBS
+#slogan {
+	margin:50px;
+}
+
+#about {
+	margin-top: 10vh;
+}
+
+.benefits-top {
+	margin-top: 50px;
+}
+
+.benefits-bottom {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.benefits-small:hover {
+	background-color: white !important;
+	color: black;
+}
+
+#open-positions {
+	margin-top: 50px;
+}
+
+.bottom-banner {
+	width: 100%;
 }
 
 
