@@ -40,6 +40,22 @@ p {
 	font-size: 16px;
 }
 
+li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1em;
+}
+
+li a {
+	color: $green;
+	background-color: black;
+	padding: .5em;
+}
+
+li a:hover {
+	color:$green;
+}
+
 hr.green {
 	width: 80px;
 	border: 2px solid $green;
@@ -217,6 +233,10 @@ header {
 
 .bottom-banner {
 	width: 100%;
+}
+
+.user-only {
+	margin-top: 20px;
 }
 
 

@@ -27,7 +27,7 @@
 
 
 <header id="main_navigation">
-	<a href="/" class="navbar-brand"><img id="logo" src="http://i.imgur.com/2IxxxkL.png" alt=""></a><br>
+	<a href="/" class="navbar-brand"><img id="logo" src="https://i.imgur.com/2IxxxkL.png" alt=""></a><br>
 
 		<!-- <img src="/assets/Top-Banner.jpg" class="header-image"> -->
 
@@ -40,12 +40,7 @@
 		
 </header>
 
-<div class="user-only">
-	<% if current_user.present? %>
-		<li><%= link_to "Profile", user_path(current_user) %></li>
-		<li><%= link_to "Logout", logout_path, method: :delete %></li>
-	<% end %>
-</div>
+
 
 <%= yield %>
 

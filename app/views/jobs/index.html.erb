@@ -1,4 +1,10 @@
 <div class="wrapper">
+	<div class="user-only text-center">
+		<% if current_user.present? %>
+			<li><%= link_to "Profile", user_path(current_user) %></li>
+			<li><%= link_to "Logout", logout_path, method: :delete %></li>
+		<% end %>
+	</div>
 
 	<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="about">
 		<h2>Careers</h2>
