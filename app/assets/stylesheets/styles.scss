@@ -129,10 +129,7 @@ header {
 	}
 }
 
-//  #about, #games {
-// 	// margin-top: -100px;
-// 	// z-index: -200;
-// }
+
 
 #games {
 	position: relative;
@@ -182,6 +179,13 @@ header {
 	border-radius: 22px;
 	margin: 20px 0px 100px 0;
 }
+
+#sign-up-btn {
+	color: $green;
+	background-color: black;
+	border: 3px solid $green;
+}
+
 
 
 // JOBS
