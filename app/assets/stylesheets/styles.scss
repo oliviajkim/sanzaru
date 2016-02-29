@@ -15,6 +15,10 @@ html {
     min-height: 100%;
 }
 
+.dark-bg {
+	background-color: $dark
+}
+
 body {
 	height: 100%;
 }
@@ -63,9 +67,10 @@ hr.green {
 // }
 
 header {
-		// position: absolute;
-		// top: 0;
-	}
+	background-image: url(Top-Banner.jpg);
+	background-repeat: no-repeat;
+	height: 100px;
+}
 
 #main_navigation {
 	width: 100%;
@@ -75,15 +80,17 @@ header {
 	}
 	nav {
 		font-family: 'Raleway', sans-serif;
-		padding: 1em 3% 1.5em 3%;
+		padding: 1em 3% 1em 3%;
 		float: right;
+		vertical-align: middle;
+		// margin: 40px 0 40px 0;
 		a {
-			color: black;
+			color: white;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 600;
 			font-size: 16px;
 			text-decoration: none;
-			margin: 2rem;
+			margin: 1rem;
 			padding: .5em;
 			text-transform: uppercase;
 		}
@@ -95,33 +102,6 @@ header {
 	}
 }
 
-#main_nav_black {
-	width: 100%;
-	#logo {
-		width: 80px;
-		padding-left: 10%;
-	}
-	nav {
-		font-family: 'Raleway', sans-serif;
-		padding: 1em 3% 1.5em 3%;
-		float: right;
-		a {
-			color: black;
-			font-family: 'Raleway', sans-serif;
-			font-weight: 600;
-			font-size: 16px;
-			text-decoration: none;
-			margin: 2rem;
-			padding: .5em;
-			text-transform: uppercase;
-		}
-		a:hover {
-			color: $green;
-			background-color: black;
-			text-decoration: none;
-		}
-	}
-}
 
 
 // MAIN
@@ -137,6 +117,9 @@ header {
 	height: 10vh;
 }
 
+.tron {
+	clear: both;
+}
 
 .tron, .vrsports, .sonicfire {
 	position: relative;
@@ -148,17 +131,13 @@ header {
 		transform: translate(-50%, 0);
 	}
 }
-.tron, #about, #games {
+ #about, #games {
 	// margin-top: -100px;
 	z-index: -200;
 }
 
 #games {
 	position: relative;
-}
-
-#about {
-	margin-top: 10vh;
 }
 
 .description {
@@ -210,6 +189,10 @@ header {
 // JOBS
 #slogan {
 	margin:50px;
+}
+
+#about {
+	margin-top: 10vh;
 }
 
 .benefits-top {
