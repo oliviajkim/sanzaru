@@ -2,7 +2,7 @@
 
 <div class="col-sm-6 col-sm-offset-3" id="new-user">
 	<h1 class="text-center">Edit Job</h1>
-	<%= form_for @job, url: '/jobs' do |f| %>
+	<%= form_for @job do |f| %>
 	<form>
 	<fieldset class="form-group">
 		<%= f.text_field :job_number, class: "form-control", placeholder: "Job Number", autofocus: true %>

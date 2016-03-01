@@ -30,7 +30,7 @@ class JobsController < ApplicationController
 	end
 
 	def update
-		@job = Job.find_by(params[:id])
+		@job = Job.find(params[:id])
 		@id = @job.id
 		@job.user_id = current_user.id
 		@job.update_attributes(job_params)
