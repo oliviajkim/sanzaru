@@ -2,20 +2,26 @@
 	<div class="text-center" id="user-header">
 	  <h4 class="text-center" style="margin-top:40px">WELCOME</h4>
 	  <h6>Today is: <%= Time.now.strftime("%a, %B %d, %Y") %></h6>
-	  <small><%= link_to "Edit Profile", edit_user_path(@user), id:"edit-profile-btn" %></small>
-	  <br>
-	  <% if current_user %>
-		<%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %>
-	  <% end %>
 	</div>
 	<br><br>
-	<div class="col-sm-6 col-xs-12">
-		<h4 class="text-center">Open Positions</h4>
+
+	<div class="col-sm-3 col-xs-12">
+		  <small><%= link_to "Edit Profile", edit_user_path(@user), id:"edit-profile-btn" %></small>
+		  <br>
+		  <% if current_user %>
+			<%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %>
+		  <% end %>
+	</div>
+
+	<div class="col-sm-8 col-xs-12">
+		<h4>Open Positions</h4>
 		<hr>
+		<% @user.jobs.each do |job| %>
+			<h4 class="job-title"><%= link_to job.title, job_path(job) %>
+			<small class="job-number">Job Number: <%= job.job_number %></small></h4>
+			<br>
+		<% end %>
 
 	</div>
-	<div class="col-sm-6 col-xs-12">
-		<h4 class="text-center">Closed Positions</h4>
-		<hr>
-	</div>
+
 </div>

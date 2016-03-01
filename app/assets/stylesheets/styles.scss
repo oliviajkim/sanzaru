@@ -6,7 +6,7 @@ $dark: #393939;
 
 
 * {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box;
 }
 
@@ -74,13 +74,6 @@ hr.green {
 
  // HEADER 
 
-// .wrapper {
-// 	position: relative;
-// 	header {
-// 		position: absolute;
-// 		top: 0;
-// 	}
-// }
 
 header {
 	background-image: url(Top-Banner.jpg);
@@ -144,8 +137,6 @@ header {
 		transform: translate(-50%, 0);
 	}
 }
-
-
 
 #games {
 	position: relative;
@@ -211,6 +202,11 @@ header {
 
 #about {
 	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.home, .jobs-index, #open-positions {
+	margin-bottom: 10vh;
 }
 
 .benefits-top {
@@ -239,18 +235,50 @@ header {
 	margin-top: 20px;
 }
 
+.job-details {
+	margin-top: 50px;
+}
+
+// .job-title {
+// 	margin-bottom: 40px;
+// }
+
+small.job-number {
+	color: $dark;
+	display: inline-block;
+}
+
+small.job-number:hover {
+	background-color: white;
+	color: $dark;
+	font-weight: 300;
+}
+
+small.created-on {
+	color: $dark;
+	display: inline-block !important;
+	font-weight: 300;
+}
+
+small.created-on:hover {
+	background-color: white;
+	color: $dark;
+
+}
+
 
 // FOOTER 
 
 footer {
 	// height: 10vh;
+	
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
-	// height: 10vh;
-	// position: fixed !important;
+	height: 10vh;
+	position: absolute !important;
 	bottom: 0;
 	p, a {
-		color: white;
+		color: lightgray;
 	}
 	a:hover {
 		text-decoration: none;
@@ -258,16 +286,18 @@ footer {
 	}
 	#social {
 		// padding-top: 10px;
+		// margin: 10px 10px 10px 10px;
 	}
 	#social a {
-		color: white;
+		color: lightgray;
 		text-transform: none;
 		font-size: 20px;
-		margin: 10px;
-
+		padding: 0px 5px 5px 5px;
 	}
 	#copyright {
 		font-size: 12px;
+		margin-bottom: 0;
+		margin-top: 15px;
 	}
 }
 
