@@ -1,8 +1,8 @@
 <div class="wrapper">
 	<div class="user-only text-center">
 		<% if current_user.present? %>
-			<li><%= link_to "Profile", user_path(current_user) %></li>
-			<li><%= link_to "Logout", logout_path, method: :delete %></li>
+			<li><%= link_to "Profile", user_path(current_user), id:"edit-profile-btn" %></li>
+			<li><%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %></li>
 		<% end %>
 	</div>
 
@@ -69,7 +69,7 @@
 			<br><br>
 
 			<% @job.each do |job| %>
-				<h4><%= link_to job.title, job_path(job) %></h4>
+				<h4 class="text-center job-title"><%= link_to job.title, job_path(job) %></h4>
 			<% end %>
 		</div>
 	</div>

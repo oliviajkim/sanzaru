@@ -15,9 +15,7 @@ html {
     min-height: 100%;
 }
 
-.dark-bg {
-	background-color: $dark
-}
+
 
 body {
 	height: 100%;
@@ -44,16 +42,6 @@ li {
 	list-style-type: none;
 	display: inline-block;
 	padding: 1em;
-}
-
-li a {
-	color: $green;
-	background-color: black;
-	padding: .5em;
-}
-
-li a:hover {
-	color:$green;
 }
 
 hr.green {
@@ -225,6 +213,11 @@ header {
 
 #open-positions {
 	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+#open-positions h4 {
+	margin-bottom: 20px;
 }
 
 .bottom-banner {
@@ -235,13 +228,33 @@ header {
 	margin-top: 20px;
 }
 
-.job-details {
-	margin-top: 50px;
+.job-title a {
+	color: $dark;
+	padding: .3em;
+	text-decoration: none;
+	border-bottom: 3px solid white;
 }
 
-// .job-title {
-// 	margin-bottom: 40px;
-// }
+.job-title a:hover {
+	color: $dark;
+	border-bottom-color: $green ;
+}
+
+.job-details {
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+.job-description {
+	line-height: 1.75;
+	padding: 8px;
+}
+
+.job-show-page {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 
 small.job-number {
 	color: $dark;
@@ -254,18 +267,42 @@ small.job-number:hover {
 	font-weight: 300;
 }
 
-small.created-on {
-	color: $dark;
-	display: inline-block !important;
-	font-weight: 300;
-}
-
 small.created-on:hover {
-	background-color: white;
 	color: $dark;
-
+	background-color: transparent;
+	font-weight: normal;
 }
 
+#edit-profile-btn, #logout-btn, #edit-post-btn, #new-post-btn, #profile-link {
+	color: black !important;
+	background-color: transparent !important;
+	font-weight: 700 !important;
+}
+
+#edit-profile-btn:hover {
+	color: black !important;
+}
+
+#edit-job-btn, #login-btn {
+	background-color: black;
+	color: $green;
+	font-weight: bold;
+}
+
+.menu {
+	margin: 20px 0 40px 0;
+}
+
+
+#new-post-btn, #edit-post-btn, #edit-profile-btn, #profile-link, #logout-btn {
+	padding: 1em;
+	text-decoration: none;
+	border-bottom: 3px solid white;
+}
+
+#new-post-btn:hover, #edit-post-btn:hover, #edit-profile-btn:hover, #profile-link:hover, #logout-btn:hover {
+	border-bottom-color: $green;
+}
 
 // FOOTER 
 
@@ -283,10 +320,6 @@ footer {
 	a:hover {
 		text-decoration: none;
 		color: $green;
-	}
-	#social {
-		// padding-top: 10px;
-		// margin: 10px 10px 10px 10px;
 	}
 	#social a {
 		color: lightgray;
