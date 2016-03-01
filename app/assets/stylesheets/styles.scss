@@ -6,7 +6,7 @@ $dark: #393939;
 
 
 * {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box;
 }
 
@@ -15,9 +15,7 @@ html {
     min-height: 100%;
 }
 
-.dark-bg {
-	background-color: $dark
-}
+
 
 body {
 	height: 100%;
@@ -40,6 +38,12 @@ p {
 	font-size: 16px;
 }
 
+li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 1em;
+}
+
 hr.green {
 	width: 80px;
 	border: 2px solid $green;
@@ -58,13 +62,6 @@ hr.green {
 
  // HEADER 
 
-// .wrapper {
-// 	position: relative;
-// 	header {
-// 		position: absolute;
-// 		top: 0;
-// 	}
-// }
 
 header {
 	background-image: url(Top-Banner.jpg);
@@ -128,8 +125,6 @@ header {
 		transform: translate(-50%, 0);
 	}
 }
-
-
 
 #games {
 	position: relative;
@@ -195,6 +190,11 @@ header {
 
 #about {
 	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.home, .jobs-index, #open-positions {
+	margin-bottom: 10vh;
 }
 
 .benefits-top {
@@ -213,41 +213,124 @@ header {
 
 #open-positions {
 	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+#open-positions h4 {
+	margin-bottom: 20px;
 }
 
 .bottom-banner {
 	width: 100%;
 }
 
+.user-only {
+	margin-top: 20px;
+}
+
+.job-title a {
+	color: $dark;
+	padding: .3em;
+	text-decoration: none;
+	border-bottom: 3px solid white;
+}
+
+.job-title a:hover {
+	color: $dark;
+	border-bottom-color: $green ;
+}
+
+.job-details {
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+.job-description {
+	line-height: 1.75;
+	padding: 8px;
+}
+
+.job-show-page {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+small.job-number {
+	color: $dark;
+	display: inline-block;
+}
+
+small.job-number:hover {
+	background-color: white;
+	color: $dark;
+	font-weight: 300;
+}
+
+small.created-on:hover {
+	color: $dark;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+#edit-profile-btn, #logout-btn, #edit-post-btn, #new-post-btn, #profile-link {
+	color: black !important;
+	background-color: transparent !important;
+	font-weight: 700 !important;
+}
+
+#edit-profile-btn:hover {
+	color: black !important;
+}
+
+#edit-job-btn, #login-btn {
+	background-color: black;
+	color: $green;
+	font-weight: bold;
+}
+
+.menu {
+	margin: 20px 0 40px 0;
+}
+
+
+#new-post-btn, #edit-post-btn, #edit-profile-btn, #profile-link, #logout-btn {
+	padding: 1em;
+	text-decoration: none;
+	border-bottom: 3px solid white;
+}
+
+#new-post-btn:hover, #edit-post-btn:hover, #edit-profile-btn:hover, #profile-link:hover, #logout-btn:hover {
+	border-bottom-color: $green;
+}
 
 // FOOTER 
 
 footer {
 	// height: 10vh;
+	
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
-	// height: 10vh;
-	// position: fixed !important;
+	height: 10vh;
+	position: absolute !important;
 	bottom: 0;
 	p, a {
-		color: white;
+		color: lightgray;
 	}
 	a:hover {
 		text-decoration: none;
 		color: $green;
 	}
-	#social {
-		// padding-top: 10px;
-	}
 	#social a {
-		color: white;
+		color: lightgray;
 		text-transform: none;
 		font-size: 20px;
-		margin: 10px;
-
+		padding: 0px 5px 5px 5px;
 	}
 	#copyright {
 		font-size: 12px;
+		margin-bottom: 0;
+		margin-top: 15px;
 	}
 }
 

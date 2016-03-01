@@ -1,4 +1,10 @@
 <div class="wrapper">
+	<div class="user-only text-center">
+		<% if current_user.present? %>
+			<li><%= link_to "Profile", user_path(current_user), id:"edit-profile-btn" %></li>
+			<li><%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %></li>
+		<% end %>
+	</div>
 
 	<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="about">
 		<h2>Careers</h2>
@@ -53,17 +59,17 @@
 		<img src="/assets/Bottom-Banner.jpg" alt="" class="bottom-banner">
 	</div>
 
+</div>
 
-
-
-	<div id="open-positions">
-		<div class="col-xs-12">
+	<div >
+		<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="open-positions">
 			<h3 class="text-center">OPEN POSITIONS</h3>
 			<hr class="green">
 			<p class="text-center">We're looking for brilliant folk who share a common vision to develop fun to play, visually stunning and technically spectacular console games.</p>
 			<br><br>
+
+			<% @job.each do |job| %>
+				<h4 class="text-center job-title"><%= link_to job.title, job_path(job) %></h4>
+			<% end %>
 		</div>
 	</div>
-
-
-</div>

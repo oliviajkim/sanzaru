@@ -1,0 +1,19 @@
+
+<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 job-show-page">
+	<% if current_user.present? %>
+		<%= link_to "Edit Post", edit_job_path(@job), id: "edit-post-btn" %>
+		<%= link_to "Delete Post", job_path(@job), method: :delete, id: "edit-post-btn" %>
+		<%= link_to "Profile", user_path(current_user), class: "pull-right", id:"profile-link" %>
+
+
+	<% end %>
+</div>
+
+
+<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 ">
+	<h5 class="job-number">Job Number: <%= @job.job_number %><small class="created-on">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Created on: <%= @job.created_at.strftime("%B %d, %Y") %></small></h5>
+
+	<h3><%= @job.title %></h3>
+	<br><br>
+	<%= simple_format(@job.description, class:"job-description") %>
+</div>

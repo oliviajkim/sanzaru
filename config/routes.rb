@@ -22,16 +22,13 @@ Rails.application.routes.draw do
 
   resources :users
 
-  # resources :sessions, only: [:new, :create]
-
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete "logout", to: "sessions#destroy"
 
+  resources :jobs
 
-  resources :jobs, only: [:index]
-
-
+  patch '/jobs' => 'jobs#update'
 
 
 end
