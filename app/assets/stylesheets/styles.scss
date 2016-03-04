@@ -81,10 +81,11 @@ header {
 			position: absolute;
 			font-family: 'Raleway', sans-serif;
 			padding: 1em 4% 1em 3%;
-			top: 40%;
+			bottom: -8%;
 			right: 0;
 			margin: 3% 1% 0 0;
 			a {
+				bottom: 0;
 				color: white;
 				font-family: 'Raleway', sans-serif;
 				font-weight: 600;
@@ -93,7 +94,7 @@ header {
 				padding: .4rem;
 				margin: .3rem;
 				text-transform: uppercase;
-				background-color: black;
+				// background-color: black;
 				float: right;
 			}
 			a:hover {
