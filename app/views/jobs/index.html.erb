@@ -1,8 +1,8 @@
 <div class="wrapper">
 	<div class="user-only text-center">
 		<% if current_user.present? %>
-			<li><%= link_to "Profile", user_path(current_user), id:"edit-profile-btn" %></li>
-			<li><%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %></li>
+			<li style='list-style-type: none;'><%= link_to "Profile", user_path(current_user), id:"edit-profile-btn" %></li>
+			<li style='list-style-type: none;'><%= link_to "Logout", logout_path, method: :delete, id:"logout-btn" %></li>
 		<% end %>
 	</div>
 
