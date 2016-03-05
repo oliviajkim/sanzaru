@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get '/games/ninja-reflex', to: 'static_pages#ninja-reflex'
 
 
+  get '/terms-of-use', to: 'static_pages#terms-of-use'
+
   resources :users
 
   get '/sz/account/new', to: 'users#new'

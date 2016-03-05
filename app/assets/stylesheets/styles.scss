@@ -330,14 +330,14 @@ small.created-on:hover {
 // FOOTER 
 
 footer {
-	// height: 10vh;
-	
+	// height: 15vh;
+	text-align: center;
 	background-color: $dark;
 	font-family: 'Raleway', sans-serif;
 	height: 10vh;
 	position: absolute !important;
 	bottom: 0;
-	p, a {
+	p, a , #terms-link{
 		color: lightgray;
 	}
 	a:hover {
@@ -350,10 +350,21 @@ footer {
 		font-size: 20px;
 		padding: 0px 5px 5px 5px;
 	}
-	#copyright {
+	#copyright, #terms-link {
 		font-size: 12px;
 		margin-bottom: 0;
 		margin-top: 15px;
 	}
 }
+
+#terms-details {
+	margin-top: 40px;
+	margin-bottom: 15vh;
+	h4 {
+		margin-top: 40px;
+		text-decoration: underline;
+	}
+}
+
+
 
